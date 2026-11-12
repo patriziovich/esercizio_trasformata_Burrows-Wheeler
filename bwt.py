@@ -1,5 +1,4 @@
 def trasforma(string):
-    string = input("Inserisci una stringa: ")
     string += "$"
     print(string)
 

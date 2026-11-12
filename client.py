@@ -9,6 +9,6 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as client:
     client.sendall(messaggio.encode())
 
     risposta = client.recv(1024)
-    trasforma= trasforma(messaggio)
+    
 
     print("Risposta del server:", risposta.decode())
