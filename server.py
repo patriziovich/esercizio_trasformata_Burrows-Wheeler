@@ -16,7 +16,8 @@ print("Server in ascolto su", IP, "porta", PORTA)
 
 connessione, indirizzo_client = server.accept()
 
-dati = connessione.recv(1024)
+dati = connessione.recv(1024).decode()
+trasformato=trasforma(messaggio)
 
 print("Messaggio ricevuto dal client:", dati.decode())
 
